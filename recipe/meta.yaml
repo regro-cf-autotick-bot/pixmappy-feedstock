@@ -1,5 +1,5 @@
 {% set name = "pixmappy" %}
-{% set version = "1.0.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/gbernstein/pixmappy/archive/v{{ version }}.tar.gz
-  sha256: 9ef1ddeaea58ca50cbf7226a2c68ac183726ae3e97028f9011849dd086f7c48d
+  sha256: 0626014e3b56a83d7f42ce16715f9acc2d99232d9790a5637bb5264429170b7a
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
